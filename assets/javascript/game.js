@@ -57,9 +57,9 @@ function correctGuess(guess) {
 }
 // adding counter needed here
 function addCorrectLetter(guess) {
-    for(var j = 0; j < game.length; j++) {
+    for(var i = 0; i < game.length; j++) {
         if (guess.key === game[j]) {
-            answerArray[j] = guess.key.toUpperCase();
+            answerArray[i] = guess.key.toUpperCase();
             showCurrentWord();
             lettersLeft--;
             if (lettersLeft === 0) {
