@@ -2,7 +2,7 @@
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 var gameArray = [{name: "jokic", image: "assets/images/jokic.jpg"},{name: "melo", image: "assets/images/melo.jpg"}, {name: "english", image: "assets/images/english.jpg"},
-                {name: "lever", image: "assets/images/lever.jpg"}, {name: "moe", image: "assets/images/moe.jpg"}]
+{name: "lever", image: "assets/images/lever.jpg"}, {name: "moe", image: "assets/images/moe.jpg"}]
 
 
 var generateRandom = Math.floor(Math.random() * gameArray.length);
@@ -57,8 +57,8 @@ function correctGuess(guess) {
 }
 // adding counter needed here
 function addCorrectLetter(guess) {
-    for(var i = 0; i < game.length; j++) {
-        if (guess.key === game[j]) {
+    for(var i = 0; i < game.length; i++) {
+        if (guess.key === game[i]) {
             answerArray[i] = guess.key.toUpperCase();
             showCurrentWord();
             lettersLeft--;
